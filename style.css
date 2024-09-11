@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; */
+  color: rgb(0, 0, 0);
+  line-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  text-decoration-line: unset;
+  font-family: "Times New Roman";
+}
+
+.img-logo {
+  width: 50px;
+  height: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.mail-title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.mail-title-light {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+/* FORM */
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+  font-size: 2rem;
+}
+
+input[placeholder] {
+  /* color: transparent; */
+  background-color: transparent;
+  padding: 1.3rem;
+  /* border: none; */
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 2px solid #000000ae;
+  border-width: 5px;
+  font-size: 1.3rem;
+  transition: ease-in 0.5s;
+}
+
+/* applies when clicked */
+
+.input-border-color {
+  border-bottom: 4px solid rgb(216, 191, 50) !important;
+  border-width: 100%;
+  transition: ease-in 0.5s;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  /* height: 5px; */
+}
+
+::placeholder {
+  color: #000000ae;
+  line-height: 2rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  width: 100%;
+}
+
+/* FOR SUBMIT BUTTON */
+
+.submit-form {
+  margin-top: 100px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.146);
+  border: none;
+  border-radius: 0.357rem;
+  transition: ease-in 0.5s;
+}
+
+.submit-form:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  color: white;
+}
+
+.btn-register {
+  background-color: inherit;
+  margin: 20px 0;
+  padding: 10px 100px;
+  width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 0.357rem;
+}
+
+/* eye-icon on submit button */
+
+.password-container {
+  width: 100%;
+  position: relative;
+}
+
+.password-icon {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  cursor: pointer;
+  color: #000000ae;
+  font-size: 25px;
+}
+
+.forgot-password {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+/* GENERAL CONTAINER */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.container-img {
+  margin-bottom: 6rem;
+}
+
+.container-mail-form {
+  /* padding: 30px; */
+  padding-left: 10px;
+}
+
+/* DESKTOP VIEW */
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 35%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+}
